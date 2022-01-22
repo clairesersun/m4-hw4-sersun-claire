@@ -1,0 +1,72 @@
+/*
+1.	Change the font-size of one or more elements.
+2.	Change the text color of one or more elements.
+3.	Change the background color of at least one element.
+4.	Center the text of at least one element.
+5.	Center an image element.
+6.	Group any CSS rules if appropriate using the grouping selector.
+    Ex: If both h1 and h2 elements have rules for text-align: center, that rule can be applied to both using a comma: h1, h2 {text-align: center;}
+7.	Use at least one combined CSS selector.
+    Ex: div.link (a div element with a class of link)
+    Ex: .link.link-active (an element with both the link and link-active classes)
+8.	Use at least one CSS combinator.
+    Ex: header > .link (an element with a class of link that is a direct child of a header element)
+    Ex: div .link (an element with a class of link that is contained somewhere within a header element)*/
+
+
+* {
+    background-color: black;
+    color: rgb(230, 230, 230);
+    text-align: center;
+    font-family: "ProximaNovaA-Regular-1", Arial, Helvetica, sans-serif;
+    align-items: center;
+    align-content: stretch;
+    font-size: 20px;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10%;
+    line-height: 1.66667;
+}
+
+h1 {
+    font-size: 86px;
+    color: blueviolet;
+}
+
+h2 {font-size: 42px;}
+
+h3 {font-size: 27px;}
+
+section {padding: 100px;}
+
+article.valleto, 
+article.valleto > p, 
+article.valleto > h2, 
+b, 
+em, 
+article.valleto > p > a {
+    animation-name: hi;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+.valleto {padding: 100px}
+
+a:hover {color:blueviolet}
+
+a:visited {color: rgb(130, 130, 255);}
+
+@keyframes hi {
+    from {background-color: blueviolet;}
+    to {background-color: rgb(230, 124, 142);}
+
+@keyframes hi {
+    from {background-color: blueviolet;}
+    to {background-color: rgb(230, 124, 142);}
